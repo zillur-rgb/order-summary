@@ -1,0 +1,145 @@
+$color: (
+  primary: #203560,
+  text: #757996,
+  button: #382ae1,
+  hover: #766cf1
+);
+
+@mixin flex($ju) {
+  display: flex;
+  align-items: center;
+  justify-content: $ju;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap");
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Red Hat Display";
+
+  .container {
+    min-height: 100vh;
+    background-image: url(./design/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include flex(center);
+    flex-direction: column;
+
+    .screen {
+      width: 45rem;
+      height: 70rem;
+      background: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 40px 0 rgba($color: #000000, $alpha: 0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .img {
+        width: 100%;
+        height: 22rem;
+        background-image: url(./images/illustration-hero.svg);
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+      }
+
+      main {
+          margin: 0 4.8rem;
+        h1 {
+          font-size: 2.5rem;
+          font-weight: 900;
+          text-align: center;
+          color: map-get($color, primary);
+          margin-top: 4rem;
+        }
+
+        .main-text{
+            font-size: 1.6rem;
+            text-align: center;
+            color: map-get($color, text);
+            margin-top: 2.5rem;
+        }
+
+        .product{
+            @include flex(space-between);
+            padding: 2.4rem;
+            background: #F8F9FE;
+            border-radius: 1rem;
+            margin-top: 2.4rem;
+
+            .info{
+                @include flex(center);
+               
+            }
+    
+            .contents{
+                margin-left: 1rem;
+
+                h3{
+                    font-size: 1.6rem;
+                    color: map-get($color, primary);
+                    font-weight: 900;
+                }
+
+                p{
+                    font-size: 1.6rem;
+                    color: map-get($color, text);
+                    font-weight: 500;
+                    margin-top: .6rem;
+                }
+            }
+
+            .change{
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: map-get($color, button);
+                text-transform: capitalize;
+                cursor: pointer;
+
+                &:hover{
+                    color: map-get($color, hover);
+                }
+            }
+        }
+      }
+
+      button{
+          padding: 1.6rem 10rem;
+          background: map-get($color, button);
+          border-radius: 1rem;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 500;
+          box-shadow: 0 1.5rem 4rem 0 rgba($color: map-get($color, button), $alpha: .25);
+          cursor: pointer;
+          margin-top: 3.5rem;
+
+          &:hover{
+            background-color: map-get($color, hover);
+        }
+      }
+      .cancel{
+          text-align: center;
+          font-size: 1.6rem;
+          font-weight: 500;
+          color: rgba($color: map-get($color, text), $alpha: .7);
+          margin-top: 3.5rem;
+          cursor: pointer;
+
+          &:hover{
+              color: map-get($color, primary);
+          }
+      }
+    }
+  }
+}
