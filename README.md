@@ -1,6 +1,5 @@
-# Frontend Mentor - Order summary card solution
+Order summary card solution
 
-This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -34,8 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://zillur-rgb.github.io/order-summary/
 
 ## My process
 
@@ -62,7 +60,6 @@ In future I will continue using SASS and if possible I will try to implement my 
 
 - Website - [MD Zillur Rahman](https://github.com/zillur-rgb)
 - My Design Portfolio: [zillur-rgb](https://www.behance.net/zillursPortfolio)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@zillurrgb](https://www.twitter.com/yourusername)
 
 ## Acknowledgments
